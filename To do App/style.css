@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:cursive;
+}
+
+#wrapper{
+    overflow-x: hidden;
+    height: 100vh;
+    background: #ebebeb;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/****************/
+/* Header */
+/****************/
+
+header{
+    background-color: #4044c9;
+    padding-bottom: 3.125rem;
+}
+
+.logo{
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    padding: 1rem 2rem;
+}
+
+.logo a{
+    color: #fff;;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.input-to{
+    padding: 1rem 1.125rem;
+    outline: none;
+    width: 23.5rem;
+    border-radius: 14px;
+    font-size: 1rem;
+    border: none; 
+}
+
+
+.btn-add{
+    outline: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 14px;
+    font-weight: 600;
+    color: #4044c9;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+main{
+    background-color: #fff;
+    height: 100%;
+}
+
+ul{
+    padding: 1rem 1.25rem;
+    padding-top: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: 0.625rem 1.25rem;
+    border-radius: 10px;
+    width: 60vw;
+}
+
+.list:hover {
+    background-color: #4044c9;
+    color: #fff;
+}
+
+.list:hover .box{
+    border-color: #fff;
+}
+
+.box{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.box-fill .box{
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    background-color: #4044c9;
+    border-color: #fff;
+}
+
+.box-fill .li-text{
+    color: #666;
+    text-decoration: line-through;
+}
+
+.box-fill .box::before{
+    content: "✓";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    top: -2px;
+    left: 2px;
+    color: #fff;
+    
+}
+
+.li-text-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-remove{
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 14px;
+    font-weight: 600;
+    background-color: #4044c9;
+    color: #fff;
+    cursor: pointer;
+}
+
+.list:hover .btn-remove{
+    background-color: #fff;
+    color: #4044c9;
+}
